@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Transformation Results</title>
+</head>
+<body>
+	<h1>Image Transformation Results</h1>
+	<div>
+		<h2>Original Image</h2>
+		<img src="{{ url_for('static', filename='uploads/' + original_image) }}" alt="Original Image">
+	</div>
+	<div>
+		<h2>Transformed Image</h2>
+		<img src="{{ url_for('static', filename='transformed/' + transformed_image) }}" alt="Transformed Image">
+	</div>
+</body>
+</html>
